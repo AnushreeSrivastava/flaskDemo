@@ -1,0 +1,6 @@
+from flaskblog import db
+db.create_all()
+from flaskblog import Student
+stud_1 = Student(fullname='John Miller', major='IT')
+db.session.add(stud_1)
+db.session.commit()
